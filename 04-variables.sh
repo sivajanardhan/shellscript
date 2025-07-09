@@ -6,5 +6,4 @@ Num1=$1
 Num2=$2
 
 SUM=$((Num1+Num2))
- echo"add of tw num is $sum"
- 
+ echo"add of tw num is $SUM"
