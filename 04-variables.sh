@@ -7,3 +7,5 @@ Num2=$2
 
 SUM=$((Num1+Num2))
  echo"add of tw num is: $SUM"
+
+ echo "Addition of 2 numbers is: $SUM"
