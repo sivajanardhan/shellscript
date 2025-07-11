@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # our program goal is to install mysql
 date=$(date +%F)
