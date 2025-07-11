@@ -8,3 +8,5 @@ then
 else
     echo  "$Number is not  greater than 10 "
 fi 
+
+echo "$Number"
