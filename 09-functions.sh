@@ -31,6 +31,10 @@ then
 #     echo "INFO:: You are root user"
 fi
 
-yum install mysql -y 
+yum install mysql -y &>>$LOGFILE
 
 VALIDATE $? "Installing MySQL"
+
+yum install postfix -y &>>$LOGFILE
+
+VALIDATE $? "Installing postfix"
