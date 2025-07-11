@@ -21,7 +21,7 @@ if [$? -ne 0 ]
 then 
     echo " Installation of myql is error "
 else 
-    echo "Installation of myql is error "
+    echo "Installation of myql is success  "
  fi 
 
  yum install postfix -y   
@@ -31,6 +31,6 @@ if [$? -ne 0 ]
 then 
     echo " Installation of postfix  is error "
 else 
-    echo "Installation of postfix   is error "
+    echo "Installation of postfix   is success  "
  fi 
 
