@@ -8,3 +8,4 @@ echo "Please enter your password"
 read -s password
 
 echo "password enered is : $password"
+
