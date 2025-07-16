@@ -1,17 +1,24 @@
 #!/bin/bash
 
-LOGFILEDIR=/tmp
+# colors
+# validations
+# log redirections
+
+LOGFILE_DIRECTORY=/tmp
 DATE=$(date +%F:%H:%M:%S)
 SCRIPT_NAME=$0
-$LOGFILE=$LOGFILEDIR/SCRIPT_NAME-$DATE.log
+LOGFILE=$LOGFILE_DIRECTORY/$SCRIPT_NAME-$DATE.log
+
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-Y="\e[33m
+Y="\e[33m"
 
 DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USAGE_THRESHOLD=1
 message=""
+
+#IFS= means internal feild seperator is space.
 while IFS= read line
 do  
     # this command will give you usage in number format for comparision
@@ -29,3 +36,4 @@ echo -e "message: $message"
 
 echo "$message" | mail -s "High Disk usage" sivajanardhan9989@gmail.com
 
+#how to call other shell script from your current script
